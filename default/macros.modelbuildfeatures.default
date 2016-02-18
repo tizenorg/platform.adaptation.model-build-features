@@ -1,0 +1,110 @@
+######################################################################
+# Feature naming rule
+#
+#	format)
+#	%model_build_feature_[Modulename]_[Function name] [Values]
+#
+#	- Feature name must be lower case letters.
+#	- Values : BOOLEAN (1/0) or STRING
+#	ex)
+#		Module name - wlan
+#		Function name - disable_5g
+#		Values - 1/0 (default : 0)
+#
+#	%model_build_feature_wlan_disable_5g 0
+#
+######################################################################
+
+#########################---APPFW---###################################
+%model_build_feature_appfw_capture_snapshot	1
+%model_build_feature_appfw_multi_instance	1
+%model_build_feature_appfw_process_pool		1
+
+
+#########################---Connectivity---#############################
+%model_build_feature_bt_disable_all		0
+%model_build_feature_bt_disable_le		0
+%model_build_feature_bt_disable_opp		0
+%model_build_feature_bt_disable_tethering	0
+%model_build_feature_bt_disable_hid		0
+%model_build_feature_bt_disable_audio_call	0
+%model_build_feature_bt_disable_audio_media	0
+%model_build_feature_bt_disable_health		0
+%model_build_feature_nfc	1
+%model_build_feature_smartcard	1
+%model_build_feature_wlan_adhoc_disable	1
+%model_build_feature_wlan_board_atheros	0
+%model_build_feature_wlan_board_bcmdhd	0
+%model_build_feature_wlan_board_qcwcn	0
+%model_build_feature_wlan_board_sd87xx	0
+%model_build_feature_wlan_board_steconn	0
+%model_build_feature_wlan_changeable_scan_time	1
+%model_build_feature_wlan_check_deepsleep	1
+%model_build_feature_wlan_concurrent_mode	1
+%model_build_feature_wlan_dual_band_support	1
+%model_build_feature_wlan_get_frequency	1
+%model_build_feature_wlan_hotspot2_0	1
+%model_build_feature_wlan_p2p_disable	0
+%model_build_feature_wlan_china_wapi	0
+%model_build_feature_wlan_passpoint_disable	1
+%model_build_feature_wlan_power_saving_disable	1
+%model_build_feature_wlan_prevent_excessive_scanning	0
+%model_build_feature_wlan_sec_flush_scan_result_list	0
+%model_build_feature_wlan_sec_retry_popup	0
+%model_build_feature_wlan_sec_wes	0
+%model_build_feature_wlan_wifidisplay	1
+%model_build_feature_wlan_wps_disable	1
+%model_build_feature_network_tethering_disable	0
+%model_build_feature_wlan_wearable	0
+
+#########################---Graphics---###################################
+%model_build_feature_graphics_gpu_info	mali400
+
+
+
+#########################---Input ServiceFW---#############################
+%model_build_feature_stt_disable	0
+%model_build_feature_text_input_disable_emoticon	0
+%model_build_feature_tts_disable	0
+%model_build_feature_voice_control	1
+
+
+
+#########################---Location---###################################
+%model_build_feature_location_feature	default
+%model_build_feature_location_map	1
+%model_build_feature_location_map_extension 0
+%model_build_feature_location_position	1
+%model_build_feature_location_position_gps	1
+%model_build_feature_location_position_wps	0
+%model_build_feature_location_geofence  1
+
+
+
+#########################---Multimedia---##################################
+%model_build_feature_multimedia_image_hw_acceleration    0
+
+
+
+
+#########################---Telephony---###################################
+%model_build_feature_network_dsds	0
+%model_build_feature_telephony_cdma	0
+%model_build_feature_ens_enable		0
+%model_build_feature_telephony_display_lu_reject_cause	0
+%model_build_feature_connect_default_connection_without_timer	0
+%model_build_feature_imc_nitz_specific 0
+
+#########################---UIFW---########################################
+%model_build_feature_uifw_wm_use_desktopmode	0
+%model_build_feature_formfactor    rectangle
+
+#########################---Graphics---########################################
+%model_build_feature_display_resolution 720x1280
+
+
+
+
+
+
+
