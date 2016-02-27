@@ -24,11 +24,18 @@ mkdir -p %{buildroot}%{_sysconfdir}/rpm/
 cp default/macros.modelbuildfeatures.default  default/macros.modelbuildfeatures
 %if "%{profile}" == "mobile"
 cp default/macros.modelbuildfeatures.tm1  default/macros.modelbuildfeatures
+%if "%{_repository}" == "emulator32-wayland"
+cp default/macros.modelbuildfeatures.emulatorM  default/macros.modelbuildfeatures
+%endif
 %else
 %if "%{profile}" == "wearable"
 cp default/macros.modelbuildfeatures.tw1  default/macros.modelbuildfeatures
+%if "%{_repository}" == "emulator-circle"
+cp default/macros.modelbuildfeatures.emulatorW  default/macros.modelbuildfeatures
 %endif
 %endif
+%endif
+
 install -m 644 default/macros.modelbuildfeatures %{buildroot}%{_sysconfdir}/rpm
 
 %files
